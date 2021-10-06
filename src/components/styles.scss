@@ -1,0 +1,41 @@
+.section {
+  font-family: sans-serif;
+  width: 50%;
+  overflow-x: hidden;
+
+  &:first-of-type {
+    border-right: 1px solid darkgray;
+  }
+
+  .heading {
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .actionables {
+    .upload-btn {
+      height: 30px;
+      padding: 10px;
+      position: relative;
+      > input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+  }
+  .content {
+    overflow-y: scroll;
+    height: calc(15vh - 36.5px);
+    box-sizing: border-box;
+
+    .dialog {
+      padding: 2px 5px;
+      border-bottom: 1px solid lightgray;
+      font-size: 14px;
+    }
+  }
+}
